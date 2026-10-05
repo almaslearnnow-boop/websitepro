@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">MR PRO digital services</title>
+  <desc id="description">Web development, graphic design, digital tools, and learning in Pakistan.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b16"/>
+      <stop offset="1" stop-color="#15182b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f2fe"/>
+      <stop offset="1" stop-color="#ffd700"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1050" cy="110" r="280" fill="#00f2fe" opacity=".07"/>
+  <circle cx="150" cy="610" r="350" fill="#7b61ff" opacity=".08"/>
+  <rect x="78" y="82" width="8" height="466" rx="4" fill="url(#accent)"/>
+  <text x="120" y="220" fill="#00f2fe" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="8">DIGITAL STUDIO · PAKISTAN</text>
+  <text x="112" y="350" fill="#f6f7fb" font-family="Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="-5">MR PRO</text>
+  <text x="120" y="420" fill="#d6deeb" font-family="Arial, sans-serif" font-size="31">Web · Design · Digital Tools · Learning</text>
+  <text x="120" y="500" fill="#ffd700" font-family="Arial, sans-serif" font-size="22" font-weight="700">Build your next digital idea.</text>
+</svg>

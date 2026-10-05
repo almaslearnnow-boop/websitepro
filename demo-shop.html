@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-PK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#13251f">
+  <title>FORM Goods | Fashion Store Concept Demo</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; color: #18221e; background: #f4f5f1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: inherit; }
+    .notice { padding: 7px 14px; color: #f9f7ef; background: #17251f; text-align: center; font-size: 10px; letter-spacing: 1px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 5%; border-bottom: 1px solid #dfe2d9; background: #fff; }
+    .brand { font-size: 18px; font-weight: 900; letter-spacing: 3px; text-decoration: none; }
+    nav { display: flex; gap: 16px; }
+    nav a { font-size: 11px; text-decoration: none; }
+    .bag { padding: 8px 10px; border: 1px solid #17251f; background: transparent; font-size: 11px; }
+    main { max-width: 1000px; margin: auto; padding: 24px; }
+    .hero { display: grid; grid-template-columns: 1fr .8fr; align-items: center; gap: 24px; min-height: 215px; }
+    .eyebrow { color: #63766a; font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+    h1 { max-width: 410px; margin: 10px 0; font-size: 36px; line-height: 1.02; }
+    .hero p { max-width: 390px; color: #59645e; font-size: 12px; line-height: 1.6; }
+    .hero img { display: block; width: 100%; height: 185px; object-fit: cover; object-position: center 35%; }
+    .button { display: inline-flex; min-height: 36px; align-items: center; justify-content: center; padding: 0 13px; border: 0; color: #fff; background: #17251f; font-size: 11px; font-weight: 700; text-decoration: none; cursor: pointer; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin: 24px 0 10px; }
+    h2 { margin: 0; font-size: 18px; }
+    .section-head p { margin: 0; color: #67716a; font-size: 10px; }
+    .products { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }
+    .product { padding: 12px; border: 1px solid #e1e4dc; background: #fff; }
+    .swatch { height: 58px; margin-bottom: 10px; background: linear-gradient(135deg,#d9e3dc,#a8b8ab); }
+    .product:nth-child(2) .swatch { background: linear-gradient(135deg,#e5d9d2,#9a5548); }
+    .product:nth-child(3) .swatch { background: linear-gradient(135deg,#e6e1d0,#b2a679); }
+    .product h3 { margin: 0 0 5px; font-size: 12px; }
+    .product p { margin: 0 0 10px; color: #6a746d; font-size: 10px; }
+    .product .button { width: 100%; }
+    #bag-status { min-height: 18px; margin: 10px 0 0; color: #315e48; font-size: 11px; }
+    footer { margin-top: 18px; padding-top: 12px; border-top: 1px solid #dfe2d9; color: #6d776f; font-size: 10px; }
+    @media (max-width: 520px) {
+      nav { display: none; }
+      main { padding: 16px; }
+      .hero { grid-template-columns: 1fr; gap: 12px; }
+      h1 { font-size: 30px; }
+      .hero img { height: 120px; }
+      .products { grid-template-columns: 1fr; }
+      .product { display: grid; grid-template-columns: 68px 1fr; gap: 0 10px; }
+      .swatch { grid-row: span 3; height: 100%; min-height: 72px; margin: 0; }
+      .product .button { grid-column: 2; }
+      .section-head p { max-width: 130px; text-align: right; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">CONCEPT DEMO · SAMPLE PRODUCTS AND PRICES</div>
+  <header><a class="brand" href="#top">FORM / GOODS</a><nav aria-label="Shop navigation"><a href="#collection">Collection</a><a href="#story">Our approach</a></nav><button class="bag" type="button" aria-live="polite">Bag <span id="bag-count">0</span></button></header>
+  <main id="top">
+    <section class="hero" aria-labelledby="title"><div><span class="eyebrow">EVERYDAY, REFINED</span><h1>Good pieces.<br>Better every day.</h1><p>A responsive fashion storefront concept with clear product discovery and a simple add-to-bag interaction.</p><a class="button" href="#collection">Explore the edit</a></div><img src="MOD.jfif" width="736" height="1104" alt="Fashion campaign collage used in this sample shop" fetchpriority="high" decoding="async"></section>
+    <section id="collection"><div class="section-head"><h2>Season edit</h2><p>Sample products for demo only</p></div><div class="products"><article class="product"><div class="swatch" aria-hidden="true"></div><h3>Everyday overshirt</h3><p>Demo price · PKR 4,900</p><button class="button add-item" type="button">Add to bag</button></article><article class="product"><div class="swatch" aria-hidden="true"></div><h3>Weekend knit</h3><p>Demo price · PKR 6,200</p><button class="button add-item" type="button">Add to bag</button></article><article class="product"><div class="swatch" aria-hidden="true"></div><h3>Studio trouser</h3><p>Demo price · PKR 5,400</p><button class="button add-item" type="button">Add to bag</button></article></div><p id="bag-status" aria-live="polite"></p></section>
+    <footer id="story">FORM / GOODS is an original storefront concept built to demonstrate responsive product layouts and lightweight interactions.</footer>
+  </main>
+  <script>
+    let bagCount = 0;
+    document.querySelectorAll('.add-item').forEach(button => button.addEventListener('click', () => {
+      bagCount += 1;
+      document.getElementById('bag-count').textContent = bagCount;
+      document.getElementById('bag-status').textContent = `${button.closest('.product').querySelector('h3').textContent} added to the demo bag.`;
+    }));
+  </script>
+</body>
+</html>

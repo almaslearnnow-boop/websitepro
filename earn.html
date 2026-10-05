@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Skills &amp; Freelancing Resources | MR PRO Pakistan</title>
+<meta name="description" content="Explore MR PRO digital learning resources covering freelancing, web development, design, and AI tools. Review the program details and ask questions before joining.">
+<meta name="author" content="MR PRO">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050505">
+<meta property="og:site_name" content="MR PRO">
+<meta property="og:title" content="Digital Skills &amp; Freelancing Resources | MR PRO">
+<meta property="og:description" content="Explore digital learning resources in freelancing, web development, design, and AI tools from MR PRO.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mrproofficial.online/earn.html">
+<meta property="og:image" content="https://mrproofficial.online/social-preview.svg">
+<meta property="og:image:alt" content="MR PRO digital learning and services in Pakistan">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Skills &amp; Freelancing Resources | MR PRO">
+<meta name="twitter:description" content="Digital learning resources covering freelancing, web development, design, and AI tools.">
+<meta name="twitter:image" content="https://mrproofficial.online/social-preview.svg">
+<link rel="canonical" href="https://mrproofficial.online/earn.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Digital Skills and Freelancing Resources | MR PRO",
+  "description": "Digital learning resources covering freelancing, web development, design, and AI tools.",
+  "url": "https://mrproofficial.online/earn.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MR PRO",
+    "url": "https://mrproofficial.online/"
+  },
+  "inLanguage": "en-PK"
+}
+</script>
+<style>
+:root {
+  --cyan: #00F5FF;
+  --purple: #7B61FF;
+  --green: #00FFA3;
+  --bg: #050505;
+  --bg2: #080810;
+  --glass: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.08);
+  --text: #f0f0ff;
+  --muted: rgba(240,240,255,0.5);
+  --wa: #25D366;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* ===== CUSTOM CURSOR ===== */
+#cursor {
+  width: 12px; height: 12px;
+  background: var(--cyan);
+  border-radius: 50%;
+  position: fixed; pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%,-50%);
+  transition: transform 0.1s, width 0.3s, height 0.3s, opacity 0.3s;
+  mix-blend-mode: screen;
+}
+#cursor-ring {
+  width: 36px; height: 36px;
+  border: 1px solid rgba(0,245,255,0.4);
+  border-radius: 50%;
+  position: fixed; pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%,-50%);
+  transition: transform 0.15s ease-out, width 0.3s, height 0.3s;
+}
+body:hover #cursor { opacity:1; }
+
+/* ===== SCROLL PROGRESS ===== */
+#scroll-bar {
+  position: fixed; top:0; left:0; height:2px;
+  background: linear-gradient(90deg, var(--purple), var(--cyan), var(--green));
+  z-index: 10000; width: 0%; transition: width 0.1s;
+}
+
+/* ===== LOADING SCREEN ===== */
+#loader {
+  position: fixed; inset:0; background: var(--bg);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.8s, visibility 0.8s;
+}
+#loader.hidden { opacity:0; visibility:hidden; }
+.loader-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1em;
+  animation: pulse 1s infinite alternate;
+}
+.loader-bar {
+  width: 200px; height: 2px;
+  background: var(--glass-border);
+  margin-top: 24px; border-radius: 99px; overflow: hidden;
+}
+.loader-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--purple), var(--cyan));
+  animation: load 1.8s ease-in-out forwards;
+}
+@keyframes load { 0%{width:0%} 100%{width:100%} }
+@keyframes pulse { from{opacity:0.7} to{opacity:1} }
+
+/* ===== NAVBAR ===== */
+nav {
+  position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+  width: calc(100% - 40px); max-width: 1200px;
+  background: rgba(5,5,10,0.7);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 14px 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+nav.scrolled {
+  background: rgba(5,5,10,0.92);
+  box-shadow: 0 0 40px rgba(0,245,255,0.06);
+}
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem; font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex; gap: 32px; list-style: none;
+}
+.nav-links a {
+  color: var(--muted); text-decoration: none;
+  font-size: 0.88rem; font-weight: 500;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute; bottom: -4px; left:0; right:0; height:1px;
+  background: var(--cyan);
+  transform: scaleX(0); transition: transform 0.2s;
+  transform-origin: left;
+}
+.nav-links a:hover { color: var(--cyan); }
+.nav-links a:hover::after { transform: scaleX(1); }
+.nav-cta {
+  background: linear-gradient(135deg, var(--purple), var(--cyan));
+  color: #000 !important; font-weight: 700 !important;
+  padding: 8px 20px; border-radius: 8px;
+  font-size: 0.85rem !important;
+  transition: opacity 0.2s, transform 0.2s !important;
+}
+.nav-cta:hover { opacity: 0.85; transform: scale(1.04) !important; }
+.nav-cta::after { display:none !important; }
+
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: none; padding: 4px;
+}
+.hamburger span {
+  display: block; width: 24px; height: 2px;
+  background: var(--cyan); border-radius: 2px;
+  transition: all 0.3s;
+}
+.mobile-menu {
+  display: none; position: fixed; inset:0; top:80px;
+  background: rgba(5,5,10,0.97);
+  backdrop-filter: blur(40px);
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 32px; z-index: 999;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  color: var(--text); text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem; font-weight: 700;
+  transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--cyan); }
+
+/* ===== HERO ===== */
+#home {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 120px 20px 80px;
+  position: relative; overflow: hidden;
+}
+
+canvas#particles { position:absolute; inset:0; opacity:0.6; }
+
+.orb {
+  position: absolute; border-radius: 50%;
+  filter: blur(100px); pointer-events: none;
+}
+.orb1 { width:600px; height:600px; background:rgba(123,97,255,0.15); top:-200px; left:-200px; animation: drift1 12s ease-in-out infinite alternate; }
+.orb2 { width:500px; height:500px; background:rgba(0,245,255,0.1); bottom:-100px; right:-150px; animation: drift2 15s ease-in-out infinite alternate; }
+.orb3 { width:300px; height:300px; background:rgba(0,255,163,0.08); top:50%; left:50%; transform:translate(-50%,-50%); animation: drift3 10s ease-in-out infinite alternate; }
+
+@keyframes drift1 { from{transform:translate(0,0)} to{transform:translate(80px,60px)} }
+@keyframes drift2 { from{transform:translate(0,0)} to{transform:translate(-60px,40px)} }
+@keyframes drift3 { from{transform:translate(-50%,-50%) scale(1)} to{transform:translate(-50%,-50%) scale(1.3)} }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: 99px; padding: 6px 16px;
+  font-size: 0.8rem; color: var(--muted);
+  margin-bottom: 28px;
+  animation: fadeUp 0.8s ease both;
+}
+.hero-badge span {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 10px var(--green);
+  animation: blink 1.5s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+h1.hero-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.4rem, 7vw, 6rem);
+  font-weight: 800;
+  line-height: 1.08;
+  max-width: 900px;
+  animation: fadeUp 0.9s 0.1s ease both;
+}
+h1.hero-title .grad {
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 50%, var(--green) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: gradShift 4s ease-in-out infinite alternate;
+}
+@keyframes gradShift { from{background-position:0%} to{background-position:100%} }
+
+.type-wrap {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--cyan);
+  margin: 16px 0;
+  min-height: 2.5rem;
+  animation: fadeUp 1s 0.2s ease both;
+}
+#typed-cursor { animation: blink 0.7s infinite; color: var(--cyan); }
+
+.hero-sub {
+  max-width: 640px;
+  color: var(--muted);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.7;
+  margin: 0 auto 40px;
+  animation: fadeUp 1s 0.3s ease both;
+}
+
+.hero-btns {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  justify-content: center;
+  animation: fadeUp 1s 0.4s ease both;
+}
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, var(--purple), var(--cyan));
+  color: #000; font-weight: 700;
+  padding: 14px 32px; border-radius: 12px;
+  text-decoration: none; font-size: 0.95rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 30px rgba(0,245,255,0.25);
+  border: none; cursor: none;
+}
+.btn-primary:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 0 50px rgba(0,245,255,0.4); }
+
+.btn-glass {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  color: var(--text); font-weight: 600;
+  padding: 14px 32px; border-radius: 12px;
+  text-decoration: none; font-size: 0.95rem;
+  transition: all 0.2s; cursor: none;
+  backdrop-filter: blur(10px);
+}
+.btn-glass:hover { border-color: var(--cyan); color: var(--cyan); box-shadow: 0 0 20px rgba(0,245,255,0.15); }
+
+.btn-wa {
+  background: var(--wa);
+  color: #fff; font-weight: 700;
+  padding: 14px 32px; border-radius: 12px;
+  text-decoration: none; font-size: 0.95rem;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: all 0.2s; cursor: none;
+  box-shadow: 0 0 30px rgba(37,211,102,0.3);
+}
+.btn-wa:hover { transform: translateY(-2px); box-shadow: 0 0 50px rgba(37,211,102,0.4); }
+
+.hero-stats {
+  display: flex; flex-wrap: wrap; gap: 24px;
+  justify-content: center; margin-top: 56px;
+  animation: fadeUp 1s 0.5s ease both;
+}
+.stat-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px; padding: 20px 28px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+.stat-card:hover { border-color: var(--cyan); transform: translateY(-4px); box-shadow: 0 0 30px rgba(0,245,255,0.1); }
+.stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 2rem; font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+
+/* ===== MARQUEE ===== */
+.marquee-section {
+  overflow: hidden; padding: 24px 0;
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  background: rgba(0,245,255,0.02);
+}
+.marquee-track {
+  display: flex; gap: 60px; width: max-content;
+  animation: marquee 25s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+.marquee-item {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.85rem; font-weight: 700;
+  color: var(--muted); letter-spacing: 0.1em;
+  text-transform: uppercase; white-space: nowrap;
+  display: flex; align-items: center; gap: 16px;
+}
+.marquee-item::after { content: '✦'; color: var(--cyan); font-size: 0.6rem; }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ===== SECTIONS ===== */
+section { padding: 100px 20px; position: relative; }
+.container { max-width: 1200px; margin: 0 auto; }
+
+.section-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: 99px; padding: 5px 14px;
+  font-size: 0.75rem; color: var(--cyan);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800; line-height: 1.1;
+  margin-bottom: 16px;
+}
+.section-sub {
+  color: var(--muted); max-width: 560px;
+  font-size: 1rem; line-height: 1.7;
+  margin-bottom: 56px;
+}
+
+/* ===== COURSES ===== */
+#courses { background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%); }
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.course-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px; padding: 28px;
+  transition: all 0.35s; position: relative; overflow: hidden;
+}
+.course-card::before {
+  content: '';
+  position: absolute; inset:0;
+  background: linear-gradient(135deg, rgba(123,97,255,0.05), rgba(0,245,255,0.05));
+  opacity: 0; transition: opacity 0.35s;
+}
+.course-card:hover::before { opacity: 1; }
+.course-card:hover { border-color: rgba(0,245,255,0.3); transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 40px rgba(0,245,255,0.08); }
+.course-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  background: linear-gradient(135deg, var(--purple), var(--cyan));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; margin-bottom: 18px;
+}
+.course-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;
+}
+.course-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.6; margin-bottom: 16px; }
+.course-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+.tag {
+  background: rgba(0,245,255,0.08);
+  border: 1px solid rgba(0,245,255,0.15);
+  color: var(--cyan); font-size: 0.72rem;
+  padding: 3px 10px; border-radius: 99px;
+}
+.btn-sm {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: linear-gradient(135deg, var(--purple), var(--cyan));
+  color: #000; font-weight: 700;
+  padding: 9px 20px; border-radius: 8px;
+  text-decoration: none; font-size: 0.82rem;
+  transition: all 0.2s; cursor: none; border: none;
+  width: 100%; justify-content: center;
+}
+.btn-sm:hover { opacity: 0.85; transform: scale(1.02); }
+
+/* ===== WHY MR PRO ===== */
+#why { background: var(--bg); }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.why-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px; padding: 24px;
+  transition: all 0.3s;
+}
+.why-card:hover { border-color: rgba(123,97,255,0.4); transform: translateY(-4px); box-shadow: 0 0 30px rgba(123,97,255,0.08); }
+.why-icon {
+  font-size: 1.8rem; margin-bottom: 14px;
+  display: block;
+}
+.why-title { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 8px; }
+.why-text { color: var(--muted); font-size: 0.87rem; line-height: 1.6; }
+
+/* ===== HOW IT WORKS ===== */
+#how { background: var(--bg2); }
+.timeline {
+  position: relative; max-width: 800px; margin: 0 auto;
+}
+.timeline::before {
+  content: '';
+  position: absolute; left: 28px; top:0; bottom:0; width:1px;
+  background: linear-gradient(180deg, var(--purple), var(--cyan), var(--green));
+}
+.tl-item {
+  display: flex; gap: 28px; margin-bottom: 40px;
+  position: relative;
+}
+.tl-num {
+  width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--purple), var(--cyan));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 800;
+  color: #000; position: relative; z-index: 1;
+  box-shadow: 0 0 30px rgba(0,245,255,0.3);
+}
+.tl-body {
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: 16px; padding: 20px 24px; flex: 1;
+  transition: all 0.3s;
+}
+.tl-body:hover { border-color: rgba(0,245,255,0.2); box-shadow: 0 0 20px rgba(0,245,255,0.05); }
+.tl-title { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 4px; }
+.tl-text { color: var(--muted); font-size: 0.87rem; line-height: 1.6; }
+
+/* ===== TESTIMONIALS ===== */
+#success { background: var(--bg); overflow: hidden; }
+.testi-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px;
+}
+.testi-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px; padding: 24px;
+  transition: all 0.35s; position: relative;
+}
+.testi-card::before {
+  content: '"'; font-size: 6rem; line-height: 0.5;
+  position: absolute; top:20px; right:20px;
+  font-family: 'Syne', sans-serif;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  opacity: 0.2;
+}
+.testi-card:hover { border-color: rgba(0,245,255,0.25); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.testi-stars { color: #FFB800; margin-bottom: 12px; letter-spacing: 2px; }
+.testi-text { color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px; }
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple), var(--cyan));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1rem;
+  color: #000;
+}
+.testi-name { font-weight: 600; font-size: 0.9rem; }
+.testi-role { font-size: 0.77rem; color: var(--cyan); }
+
+/* ===== PARTNERSHIP ===== */
+#partnership {
+  background: linear-gradient(135deg, rgba(123,97,255,0.05) 0%, rgba(0,245,255,0.05) 100%);
+  border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);
+}
+.partner-box {
+  background: var(--glass); border: 1px solid rgba(0,245,255,0.15);
+  border-radius: 28px; padding: 60px;
+  text-align: center; max-width: 900px; margin: 0 auto;
+  position: relative; overflow: hidden;
+}
+.partner-box::before {
+  content: '';
+  position: absolute; inset: -2px;
+  background: linear-gradient(135deg, var(--purple), var(--cyan), var(--green));
+  border-radius: 28px; z-index: -1; opacity: 0.2;
+}
+.partner-box h2 { font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; margin-bottom: 16px; }
+.partner-perks {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px; margin: 36px 0;
+}
+.perk {
+  background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border);
+  border-radius: 12px; padding: 16px;
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.88rem;
+}
+.perk-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  background: var(--green); box-shadow: 0 0 8px var(--green);
+}
+
+/* ===== PROJECTS ===== */
+#projects { background: var(--bg2); }
+.projects-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;
+}
+.project-card {
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: 20px; overflow: hidden; transition: all 0.35s;
+}
+.project-card:hover { transform: translateY(-6px); border-color: rgba(0,245,255,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.project-thumb {
+  height: 180px; display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; position: relative; overflow: hidden;
+}
+.project-thumb::after {
+  content: '';
+  position: absolute; inset:0;
+  background: linear-gradient(180deg, transparent 50%, rgba(5,5,5,0.9) 100%);
+}
+.project-body { padding: 20px 24px; }
+.project-title { font-family: 'Syne', sans-serif; font-weight: 700; margin-bottom: 6px; }
+.project-desc { color: var(--muted); font-size: 0.85rem; line-height: 1.5; }
+
+/* ===== FAQ ===== */
+#faq { background: var(--bg); }
+.faq-list { max-width: 780px; margin: 0 auto; }
+.faq-item {
+  border: 1px solid var(--glass-border);
+  border-radius: 14px; margin-bottom: 12px; overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq-item.open { border-color: rgba(0,245,255,0.25); }
+.faq-q {
+  width: 100%; background: var(--glass);
+  border: none; color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem; font-weight: 600;
+  padding: 20px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  cursor: none; text-align: left;
+}
+.faq-arrow {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--glass-border);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; transition: transform 0.3s, background 0.3s;
+  font-size: 0.9rem; color: var(--cyan);
+}
+.faq-item.open .faq-arrow { transform: rotate(180deg); background: rgba(0,245,255,0.15); }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s;
+  background: rgba(5,5,10,0.5);
+  color: var(--muted); font-size: 0.9rem; line-height: 1.7;
+  padding: 0 24px;
+}
+.faq-item.open .faq-a { max-height: 300px; padding: 16px 24px 20px; }
+
+/* ===== FINAL CTA ===== */
+#cta {
+  background: radial-gradient(ellipse at center, rgba(123,97,255,0.15) 0%, var(--bg) 70%);
+  text-align: center; padding: 120px 20px;
+}
+#cta h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 5rem);
+  font-weight: 800; line-height: 1.08; max-width: 860px; margin: 0 auto 20px;
+}
+#cta h2 span {
+  background: linear-gradient(135deg, var(--cyan), var(--purple), var(--green));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-size: 200%; animation: gradShift 4s ease-in-out infinite alternate;
+}
+#cta p { color: var(--muted); max-width: 520px; margin: 0 auto 40px; font-size: 1.05rem; line-height: 1.7; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--bg2);
+  border-top: 1px solid var(--glass-border);
+  padding: 60px 20px 30px;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 40px; max-width: 1200px; margin: 0 auto 50px;
+}
+.footer-brand p { color: var(--muted); font-size: 0.88rem; line-height: 1.7; margin: 12px 0 20px; }
+.footer-col h4 {
+  font-family: 'Syne', sans-serif; font-weight: 700;
+  font-size: 0.9rem; margin-bottom: 16px;
+  color: var(--text);
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a { color: var(--muted); text-decoration: none; font-size: 0.87rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--cyan); }
+.footer-bottom {
+  max-width: 1200px; margin: 0 auto;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+  font-size: 0.82rem; color: var(--muted);
+}
+.footer-glow {
+  width: 100%; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan), var(--purple), transparent);
+  margin-bottom: 4px; opacity: 0.5;
+}
+
+/* ===== FLOATING WA ===== */
+.wa-float {
+  position: fixed; bottom: 24px; right: 24px;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: var(--wa); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; text-decoration: none;
+  z-index: 900; box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.2s;
+}
+.wa-float:hover { transform: scale(1.1); }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+.wa-float-tooltip {
+  position: absolute; right: 68px;
+  background: rgba(5,5,10,0.9); border: 1px solid var(--glass-border);
+  border-radius: 8px; padding: 6px 12px; white-space: nowrap;
+  font-size: 0.8rem; font-weight: 600;
+  opacity: 0; pointer-events: none; transition: opacity 0.2s;
+}
+.wa-float:hover .wa-float-tooltip { opacity: 1; }
+
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-mobile-cta {
+  display: none; position: fixed; bottom:0; left:0; right:0;
+  background: rgba(5,5,10,0.95); backdrop-filter: blur(20px);
+  border-top: 1px solid var(--glass-border);
+  padding: 12px 20px; z-index: 800;
+}
+.sticky-mobile-cta a {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--wa); color: #fff; font-weight: 700;
+  border-radius: 12px; padding: 12px;
+  text-decoration: none; font-size: 0.95rem;
+}
+
+/* ===== REVEAL ===== */
+.reveal { opacity:0; transform: translateY(32px); transition: all 0.7s ease; }
+.reveal.visible { opacity:1; transform: translateY(0); }
+
+/* ===== MOUSE GLOW ===== */
+.mouse-glow {
+  position: fixed; width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(0,245,255,0.04) 0%, transparent 70%);
+  pointer-events: none; z-index: 0;
+  transform: translate(-50%,-50%);
+  transition: left 0.1s, top 0.1s;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 700px) {
+  body { cursor: auto; }
+  #cursor, #cursor-ring { display:none; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero-stats { gap: 12px; }
+  .stat-card { padding: 14px 18px; }
+  .partner-box { padding: 32px 20px; }
+  .timeline::before { display: none; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .sticky-mobile-cta { display: block; }
+  #home { padding-bottom: 100px; }
+  footer { padding-bottom: 80px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body { cursor: auto; }
+  #cursor, #cursor-ring { display: none; }
+}
+
+.site-offer { position: relative; z-index: 5; display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 72px; padding: 11px 48px 11px 18px; color: #f5f7fb; background: linear-gradient(100deg, #102433, #17152a 70%, #241b10); border-block: 1px solid rgba(0,245,255,.22); text-align: center; font: 500 13px/1.5 'DM Sans', sans-serif; }
+.site-offer strong { color: #83fff1; }
+.site-offer a { color: #ffe09a; font-weight: 700; text-underline-offset: 3px; white-space: nowrap; }
+.site-offer button { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); border: 1px solid rgba(255,255,255,.24); border-radius: 50%; width: 28px; height: 28px; background: transparent; color: #fff; cursor: pointer; font-size: 18px; line-height: 1; }
+.site-offer button:focus-visible, .site-offer a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+@media (max-width: 700px) { .site-offer { flex-wrap: wrap; gap: 5px 10px; padding: 10px 44px 10px 12px; font-size: 11px; } .site-offer .offer-copy { flex-basis: 100%; } }
+
+/* ===== COUNTER ANIMATION ===== */
+.count { display: inline-block; }
+
+/* ===== GRADIENT BG MESH ===== */
+.mesh {
+  position: absolute; inset:0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 600px 400px at 20% 30%, rgba(123,97,255,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 500px 300px at 80% 70%, rgba(0,245,255,0.06) 0%, transparent 100%);
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="scroll-bar"></div>
+<div class="mouse-glow" id="mouse-glow"></div>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20join%20and%20start%20learning." class="wa-float" target="_blank">
+  <span class="wa-float-tooltip">💬 Chat Now</span>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-mobile-cta">
+  <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20join%20and%20start%20learning." target="_blank">
+    💬 Join MR PRO on WhatsApp
+  </a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">MR PRO</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#why">Why MR PRO</a></li>
+    <li><a href="website.html">developers</a></li>
+    <li><a href="graphic.html"> Designers</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="#partnership">Partnership</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20contact%20you." target="_blank" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<aside class="site-offer" aria-label="MR PRO current offers">
+  <span class="offer-copy"><strong>Canva Pro plans:</strong> PKR 99/month · 250/6 months · 499/year · 1,999 listed lifetime</span>
+  <span><strong>Business &amp; freelance packages from PKR 15,000.</strong> Confirm current offer, included scope and access before payment.</span>
+  <a href="store.html#catalog">Explore offers</a>
+  <button type="button" aria-label="Dismiss offers" onclick="this.closest('.site-offer').remove()">×</button>
+</aside>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#courses" onclick="closeMobile()">Courses</a>
+  <a href="#why" onclick="closeMobile()">Why MR PRO</a>
+  <a href="#success" onclick="closeMobile()">Success</a>
+  <a href="store.html" onclick="closeMobile()">🛍 Store</a>
+  <a href="#partnership" onclick="closeMobile()">Partnership</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20join." target="_blank" style="color:var(--green)">💬 Join Now</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <canvas id="particles"></canvas>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <div style="position:relative;z-index:1">
+    <div class="hero-badge">
+      <span></span>
+      Trusted by 50+ Students Worldwide
+    </div>
+
+    <h1 class="hero-title">
+      Learn Skills. Get Projects.<br>
+      <span class="grad">Build Your Digital Empire.</span>
+    </h1>
+
+    <div class="type-wrap">
+      <span id="typed"></span><span id="typed-cursor">|</span>
+    </div>
+
+    <p class="hero-sub">
+      Master freelancing, AI tools, web development, graphic design, video editing and online business systems with Team MR PRO. Real skills. Real projects. Real income.
+    </p>
+
+    <div class="hero-btns">
+      <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20start%20learning%20and%20join%20your%20program." target="_blank" class="btn-primary">
+        🚀 Start Learning
+      </a>
+      <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20become%20your%20partner." target="_blank" class="btn-glass">
+        🤝 Become Partner
+      </a>
+      <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20join%20your%20team." target="_blank" class="btn-wa">
+        💬 Join Team MR PRO
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-num"><span class="count" data-target="50+">0</span>+</div>
+        <div class="stat-label">Students Trained</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span class="count" data-target="100+">0</span>+</div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span class="count" data-target="8">0</span></div>
+        <div class="stat-label">Premium Courses</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span class="count" data-target="95%">0</span>%</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marquee">
+    <div class="marquee-item">Freelancing Masterclass</div>
+    <div class="marquee-item">Web Development</div>
+    <div class="marquee-item">Graphic Designing</div>
+    <div class="marquee-item">AI Automation</div>
+    <div class="marquee-item">Video Editing</div>
+    <div class="marquee-item">SEO & Ranking</div>
+    <div class="marquee-item">E-Commerce Business</div>
+    <div class="marquee-item">Social Media Growth</div>
+    <div class="marquee-item">Real Projects</div>
+    <div class="marquee-item">Client Hunting</div>
+    <div class="marquee-item">Freelancing Masterclass</div>
+    <div class="marquee-item">Web Development</div>
+    <div class="marquee-item">Graphic Designing</div>
+    <div class="marquee-item">AI Automation</div>
+    <div class="marquee-item">Video Editing</div>
+    <div class="marquee-item">SEO & Ranking</div>
+    <div class="marquee-item">E-Commerce Business</div>
+    <div class="marquee-item">Social Media Growth</div>
+    <div class="marquee-item">Real Projects</div>
+    <div class="marquee-item">Client Hunting</div>
+  </div>
+</div>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">✦ Premium Courses</div>
+      <h2 class="section-title">Master In-Demand<br><span style="background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Digital Skills</span></h2>
+      <p class="section-sub">Hand-crafted courses designed to get you earning real income online — even if you're starting from zero.</p>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-card reveal">
+        <div class="course-icon">💻</div>
+        <div class="course-title">Freelancing Masterclass</div>
+        <div class="course-desc">Learn how to find clients, win projects, build proposals and scale your freelance income on Fiverr, Upwork & direct outreach.</div>
+        <div class="course-tags"><span class="tag">Fiverr</span><span class="tag">Upwork</span><span class="tag">Proposals</span><span class="tag">Client Hunting</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20Freelancing%20Masterclass." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+      <div class="course-card reveal">
+        <div class="course-icon">🌐</div>
+        <div class="course-title">Website Development</div>
+        <div class="course-desc">Build professional websites from scratch using HTML, CSS, JS, WordPress and modern frameworks. Land real clients immediately.</div>
+        <div class="course-tags"><span class="tag">HTML/CSS</span><span class="tag">WordPress</span><span class="tag">React</span><span class="tag">Real Projects</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20Website%20Development." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+      <div class="course-card reveal">
+        <div class="course-icon">🎨</div>
+        <div class="course-title">Graphic Designing</div>
+        <div class="course-desc">Master Adobe Photoshop, Illustrator, Canva Pro and brand identity design to serve international clients professionally.</div>
+        <div class="course-tags"><span class="tag">Photoshop</span><span class="tag">Canva Pro</span><span class="tag">Branding</span><span class="tag">Logos</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20Graphic%20Designing." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+      <div class="course-card reveal">
+        <div class="course-icon">🎬</div>
+        <div class="course-title">Video Editing</div>
+        <div class="course-desc">Learn professional video editing with Premiere Pro, After Effects and CapCut. Create viral content and charge premium rates.</div>
+        <div class="course-tags"><span class="tag">Premiere Pro</span><span class="tag">After Effects</span><span class="tag">CapCut</span><span class="tag">Reels</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20Video%20Editing." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+      <div class="course-card reveal">
+        <div class="course-icon">🤖</div>
+        <div class="course-title">AI Automation</div>
+        <div class="course-desc">Harness ChatGPT, Midjourney, Make.com and AI workflows to automate business processes and offer high-ticket services.</div>
+        <div class="course-tags"><span class="tag">ChatGPT</span><span class="tag">Make.com</span><span class="tag">Midjourney</span><span class="tag">Automation</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20AI%20Automation." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+      <div class="course-card reveal">
+        <div class="course-icon">🔍</div>
+        <div class="course-title">SEO & Ranking</div>
+        <div class="course-desc">Dominate Google search results with advanced SEO strategies, keyword research, on-page and off-page optimization techniques.</div>
+        <div class="course-tags"><span class="tag">Google SEO</span><span class="tag">Keywords</span><span class="tag">Backlinks</span><span class="tag">Analytics</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20SEO%20%26%20Ranking." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+      <div class="course-card reveal">
+        <div class="course-icon">🛒</div>
+        <div class="course-title">E-Commerce Business</div>
+        <div class="course-desc">Build profitable online stores on Shopify and WooCommerce. Learn product research, dropshipping and Facebook Ads.</div>
+        <div class="course-tags"><span class="tag">Shopify</span><span class="tag">Dropshipping</span><span class="tag">Facebook Ads</span><span class="tag">Products</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20E-Commerce%20Business." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+      <div class="course-card reveal">
+        <div class="course-icon">📱</div>
+        <div class="course-title">Social Media Growth</div>
+        <div class="course-desc">Grow Instagram, TikTok, YouTube and LinkedIn channels organically and with paid ads. Build influence and monetize your audience.</div>
+        <div class="course-tags"><span class="tag">Instagram</span><span class="tag">TikTok</span><span class="tag">YouTube</span><span class="tag">LinkedIn</span></div>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20enroll%20in%20Social%20Media%20Growth." target="_blank" class="btn-sm">Enroll Now →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MR PRO -->
+<section id="why">
+  <div class="container">
+    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
+      <div>
+        <div class="section-tag">✦ Why Choose Us</div>
+        <h2 class="section-title">The MR PRO<br><span style="background:linear-gradient(135deg,var(--purple),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Difference</span></h2>
+        <p class="section-sub" style="margin-bottom:0">We don't just teach theory. You get real experience, real clients and real income from day one.</p>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="why-grid" style="margin-top:40px">
+      <div class="why-card reveal"><span class="why-icon">🎯</span><div class="why-title">Real Experience Training</div><div class="why-text">Learn from practitioners who actively work with international clients, not just teachers with theory.</div></div>
+      <div class="why-card reveal"><span class="why-icon">📁</span><div class="why-title">Real Client Projects</div><div class="why-text">Work on actual projects from real clients during your training to build a portfolio that speaks volumes.</div></div>
+      <div class="why-card reveal"><span class="why-icon">💰</span><div class="why-title">Earn While Learning</div><div class="why-text">Start getting paid for projects even before you complete your course. Your income journey starts immediately.</div></div>
+      <div class="why-card reveal"><span class="why-icon">🕵️</span><div class="why-title">Client Hunting Systems</div><div class="why-text">Get proven scripts, outreach systems and platforms to consistently land new clients without cold-start anxiety.</div></div>
+      <div class="why-card reveal"><span class="why-icon">🏆</span><div class="why-title">Build Personal Brand</div><div class="why-text">We help you create a powerful online identity that attracts premium clients and high-paying opportunities.</div></div>
+      <div class="why-card reveal"><span class="why-icon">🤝</span><div class="why-title">Partner Opportunities</div><div class="why-text">Top performers get the opportunity to become official MR PRO partners and co-build the empire together.</div></div>
+      <div class="why-card reveal"><span class="why-icon">🧠</span><div class="why-title">1-on-1 Mentorship</div><div class="why-text">Get personalized guidance from Team MR PRO mentors who are invested in your individual success.</div></div>
+      <div class="why-card reveal"><span class="why-icon">⚡</span><div class="why-title">AI-Powered Workflows</div><div class="why-text">Learn to 10x your productivity with cutting-edge AI tools that clients are actively willing to pay premium for.</div></div>
+      <div class="why-card reveal"><span class="why-icon">🌍</span><div class="why-title">Lifetime Community</div><div class="why-text">Join a brotherhood of digital entrepreneurs who share opportunities, clients, knowledge and grow together.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 64px">
+      <div class="section-tag">✦ The Journey</div>
+      <h2 class="section-title">From Zero to<br><span style="background:linear-gradient(135deg,var(--cyan),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Digital Freedom</span></h2>
+      <p class="section-sub" style="margin:0 auto">A proven, battle-tested roadmap that has transformed hundreds of students into professional freelancers.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-num">01</div><div class="tl-body"><div class="tl-title">Join MR PRO</div><div class="tl-text">Contact Team MR PRO on WhatsApp, choose your course and start your transformation journey with full onboarding support.</div></div></div>
+      <div class="tl-item reveal"><div class="tl-num">02</div><div class="tl-body"><div class="tl-title">Learn Real Skills</div><div class="tl-text">Go through structured, hands-on curriculum designed by working professionals. No filler, no fluff — pure actionable knowledge.</div></div></div>
+      <div class="tl-item reveal"><div class="tl-num">03</div><div class="tl-body"><div class="tl-title">Practice on Real Projects</div><div class="tl-text">Work on live client projects assigned by Team MR PRO. Build confidence and real-world experience simultaneously.</div></div></div>
+      <div class="tl-item reveal"><div class="tl-num">04</div><div class="tl-body"><div class="tl-title">Build Your Portfolio</div><div class="tl-text">Create a stunning professional portfolio with real work samples that instantly sets you apart from 99% of competitors.</div></div></div>
+      <div class="tl-item reveal"><div class="tl-num">05</div><div class="tl-body"><div class="tl-title">Get Real Clients</div><div class="tl-text">Use our proven client-hunting systems to land your first international client within weeks of starting.</div></div></div>
+      <div class="tl-item reveal"><div class="tl-num">06</div><div class="tl-body"><div class="tl-title">Start Earning Online</div><div class="tl-text">Begin generating real foreign currency income from the comfort of your home or anywhere in the world.</div></div></div>
+      <div class="tl-item reveal"><div class="tl-num">07</div><div class="tl-body"><div class="tl-title">Become MR PRO Partner</div><div class="tl-text">Top performers are offered partnership opportunities — co-build an agency, lead projects and create a legacy together.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS STORIES -->
+<section id="success">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 56px">
+      <div class="section-tag">✦ Student Wins</div>
+      <h2 class="section-title">Real Results,<br><span style="background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Real Stories</span></h2>
+      <p class="section-sub" style="margin:0 auto">These aren't fabricated testimonials. These are real people who trusted MR PRO and changed their lives.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">Started with zero knowledge about freelancing. Within 3 months of joining MR PRO, I landed my first Upwork client earning $300. Now I'm earning consistently every month. Life changing!</div>
+        <div class="testi-author"><div class="testi-avatar">AK</div><div><div class="testi-name">Ahmed Khan</div><div class="testi-role">Web Developer · Lahore</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">The AI Automation course is gold. I now offer AI services to businesses and charge $500+ per project. MR PRO didn't just teach me skills — they gave me a business model.</div>
+        <div class="testi-author"><div class="testi-avatar">SR</div><div><div class="testi-name">Sara Rana</div><div class="testi-role">AI Consultant · Karachi</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">I was a student with no income. Now I'm running a small graphic design agency with 4 regular international clients. MR PRO gave me the system, skills and confidence to execute.</div>
+        <div class="testi-author"><div class="testi-avatar">UH</div><div><div class="testi-name">Usman Hassan</div><div class="testi-role">Graphic Design Agency · Islamabad</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">The real projects feature is what makes MR PRO different. I didn't just learn video editing — I edited real brand videos while learning. Now I charge $200 per video professionally.</div>
+        <div class="testi-author"><div class="testi-avatar">FA</div><div><div class="testi-name">Fatima Arshad</div><div class="testi-role">Video Editor · Faisalabad</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">Mentorship from MR PRO team is unmatched. They are always available, always pushing you forward. I went from a confused beginner to a confident freelancer in just 90 days.</div>
+        <div class="testi-author"><div class="testi-avatar">BM</div><div><div class="testi-name">Bilal Malik</div><div class="testi-role">SEO Specialist · Rawalpindi</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">I almost gave up on freelancing before joining MR PRO. The community, the projects, the mentors — everything worked together. Now I'm a proud MR PRO partner building my own team.</div>
+        <div class="testi-author"><div class="testi-avatar">ZQ</div><div><div class="testi-name">Zara Qureshi</div><div class="testi-role">MR PRO Partner · Multan</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIP -->
+<section id="partnership">
+  <div class="container">
+    <div class="partner-box reveal">
+      <div class="section-tag" style="justify-content:center;margin:0 auto 20px">✦ Exclusive Opportunity</div>
+      <h2>Become a Partner of <span style="background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent">MR PRO</span></h2>
+      <p style="color:var(--muted);max-width:580px;margin:16px auto 0;line-height:1.7">This isn't just mentorship. For our top performers and driven individuals, we open the doors to a full business partnership. Build your future alongside Team MR PRO.</p>
+      <div class="partner-perks">
+        <div class="perk"><div class="perk-dot"></div>Work directly with MR PRO on real projects</div>
+        <div class="perk"><div class="perk-dot"></div>Get exclusive high-ticket client referrals</div>
+        <div class="perk"><div class="perk-dot"></div>Build your own digital agency under MR PRO</div>
+        <div class="perk"><div class="perk-dot"></div>Multiple income streams & revenue sharing</div>
+        <div class="perk"><div class="perk-dot"></div>Become a team leader & mentor others</div>
+        <div class="perk"><div class="perk-dot"></div>Scale your online business with support</div>
+        <div class="perk"><div class="perk-dot"></div>Access to premium tools & resources</div>
+        <div class="perk"><div class="perk-dot"></div>Co-create courses and digital products</div>
+      </div>
+      <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20am%20interested%20in%20becoming%20your%20business%20partner.%20Please%20share%20more%20details." target="_blank" class="btn-primary" style="font-size:1rem;padding:16px 40px">
+        🤝 Apply for Partnership →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 56px">
+      <div class="section-tag">✦ Live Work</div>
+      <h2 class="section-title">Real Projects<br><span style="background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent">We Deliver</span></h2>
+      <p class="section-sub" style="margin:0 auto">Students work on real, paid client projects — not dummy exercises. This is where skills meet income.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0533,#0a1a33)">🌐</div>
+        <div class="project-body">
+          <div class="project-title">E-Commerce Website — UK Client</div>
+          <div class="project-desc">Full Shopify store with custom theme, payment integration and product listings for a London-based fashion brand.</div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1500,#002b1a)">🎨</div>
+        <div class="project-body">
+          <div class="project-title">Brand Identity — USA Startup</div>
+          <div class="project-desc">Complete brand package including logo, color palette, business cards and social media kit for a New York tech startup.</div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d0033,#00331a)">🤖</div>
+        <div class="project-body">
+          <div class="project-title">AI Chatbot System — UAE Business</div>
+          <div class="project-desc">Custom AI customer support automation for a Dubai-based retail chain using Make.com and OpenAI integration.</div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#001a33,#1a0020)">🎬</div>
+        <div class="project-body">
+          <div class="project-title">YouTube Channel Production — CA</div>
+          <div class="project-desc">Full video production pipeline including editing, thumbnails, SEO optimization and publishing strategy for a Canada channel.</div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#001a1a,#1a0a00)">📱</div>
+        <div class="project-body">
+          <div class="project-title">Social Media Management — AUS</div>
+          <div class="project-desc">Complete Instagram and TikTok content strategy, creation and management for an Australian lifestyle brand.</div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a00,#001a33)">🔍</div>
+        <div class="project-body">
+          <div class="project-title">SEO Campaign — Europe Client</div>
+          <div class="project-desc">Full-scale SEO audit, keyword strategy and link-building campaign that ranked 15 keywords on Google page one.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 56px">
+      <div class="section-tag">✦ Got Questions?</div>
+      <h2 class="section-title">Frequently<br><span style="background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Asked</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can complete beginners join MR PRO?
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">Absolutely! MR PRO is designed for anyone starting from zero. We build your foundation first, then take you to advanced levels step by step. No prior experience is needed — just commitment and willingness to work.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How do I start freelancing with MR PRO?
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">Contact us on WhatsApp, choose your course, and we'll guide you through everything — from account setup on Fiverr/Upwork to landing your first paid client. We have proven systems that work.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Will I get real projects to work on?
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">Yes! This is one of MR PRO's biggest advantages. You'll work on real client projects during training itself. This gives you actual experience, portfolio pieces and sometimes income before you even finish the course.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can students join while still studying?
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">100% yes. Many of our most successful students joined while still in school or university. The skills you learn with MR PRO will give you a massive head start in life and income while your peers are still figuring things out.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is mentorship included in the program?
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">Yes. Every student gets direct access to Team MR PRO mentors who provide guidance, review your work, answer questions and help you navigate client situations. You are never alone in this journey.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can I become a MR PRO partner?
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">Yes, and it's one of our most exciting offerings. High-performing students who demonstrate skill, commitment and results are invited to become official MR PRO partners. This means working together on bigger projects, sharing revenue and building a digital business legacy.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What is the fee structure?
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-a">Course fees vary depending on the program you choose. Contact Team MR PRO directly on WhatsApp to discuss pricing, available packages and any ongoing special offers. We believe in making world-class education accessible.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="reveal">
+      <h2>DON'T JUST WATCH THE<br><span>DIGITAL WORLD — OWN IT.</span></h2>
+      <p>Join MR PRO today and start building your online future. Real skills. Real income. Real freedom. The opportunity is right now.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20join%20now%20and%20start%20building%20my%20online%20future." target="_blank" class="btn-primary" style="font-size:1.05rem;padding:16px 36px">🚀 Join Now — It's Time</a>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20start%20earning%20online%20with%20your%20help." target="_blank" class="btn-glass" style="font-size:1.05rem;padding:16px 36px">💰 Start Earning</a>
+        <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20speak%20to%20your%20team%20directly." target="_blank" class="btn-wa" style="font-size:1.05rem;padding:16px 36px">💬 Talk to Team MR PRO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-glow"></div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo" style="font-size:1.6rem">MR PRO</a>
+      <p>Building the next generation of digital freelancers, entrepreneurs and online business leaders. Learn. Earn. Grow. Become MR PRO.</p>
+      <a href="https://wa.me/923114917370?text=Hello%20Team%20MR%20PRO,%20I%20want%20to%20join." target="_blank" class="btn-wa" style="display:inline-flex;margin-top:4px;font-size:0.85rem;padding:10px 20px">💬 Chat on WhatsApp</a>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="https://wa.me/923114917370?text=I%20want%20to%20join%20Freelancing%20Masterclass." target="_blank">Freelancing Masterclass</a></li>
+        <li><a href="https://wa.me/923114917370?text=I%20want%20to%20join%20Website%20Development." target="_blank">Website Development</a></li>
+        <li><a href="https://wa.me/923114917370?text=I%20want%20to%20join%20Graphic%20Designing." target="_blank">Graphic Designing</a></li>
+        <li><a href="https://wa.me/923114917370?text=I%20want%20to%20join%20Video%20Editing." target="_blank">Video Editing</a></li>
+        <li><a href="https://wa.me/923114917370?text=I%20want%20to%20join%20AI%20Automation." target="_blank">AI Automation</a></li>
+        <li><a href="https://wa.me/923114917370?text=I%20want%20to%20join%20SEO%20%26%20Ranking." target="_blank">SEO & Ranking</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#why">Why MR PRO</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#success">Success Stories</a></li>
+        <li><a href="#partnership">Partnership</a></li>
+        <li><a href="#projects">Live Projects</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/923114917370" target="_blank">WhatsApp: +92 311 4917370</a></li>
+        <li><a href="https://mrproofficial.online" target="_blank">mrproofficial.online</a></li>
+        <li><a href="https://wa.me/923114917370?text=I%20want%20to%20know%20about%20partnership." target="_blank">Become a Partner</a></li>
+        <li><a href="https://wa.me/923114917370?text=I%20have%20a%20general%20inquiry." target="_blank">General Inquiry</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 MR PRO. All rights reserved. Built for digital empires.</div>
+    <div style="color:var(--cyan)">mrproofficial.online</div>
+  </div>
+</footer>
+
+<script>
+// ===== LOADER =====
+// ===== CURSOR =====
+const cursor = document.getElementById('cursor');
+const cursorRing = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+const customCursorEnabled = window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches;
+if (customCursorEnabled) {
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+    document.getElementById('mouse-glow').style.left = mx + 'px';
+    document.getElementById('mouse-glow').style.top = my + 'px';
+  });
+}
+function animateCursorRing() {
+  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+  cursorRing.style.left = rx + 'px'; cursorRing.style.top = ry + 'px';
+  requestAnimationFrame(animateCursorRing);
+}
+if (customCursorEnabled) {
+  animateCursorRing();
+  document.querySelectorAll('a,button').forEach(el => {
+    el.addEventListener('mouseenter', () => { cursor.style.transform = 'translate(-50%,-50%) scale(2)'; cursor.style.opacity = '0.5'; });
+    el.addEventListener('mouseleave', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1)'; cursor.style.opacity = '1'; });
+  });
+} else {
+  cursor.remove();
+  cursorRing.remove();
+}
+
+// ===== SCROLL PROGRESS =====
+window.addEventListener('scroll', () => {
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  document.getElementById('scroll-bar').style.width = (window.scrollY / total * 100) + '%';
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ===== MOBILE MENU =====
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+  const spans = hamburger.querySelectorAll('span');
+  if (mobileMenu.classList.contains('open')) {
+    spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+  } else {
+    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }
+});
+function closeMobile() {
+  mobileMenu.classList.remove('open');
+  hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+}
+
+// ===== PARTICLES CANVAS =====
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+class Particle {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 1.5 + 0.5;
+    this.vx = (Math.random() - 0.5) * 0.3;
+    this.vy = (Math.random() - 0.5) * 0.3;
+    this.alpha = Math.random() * 0.5 + 0.1;
+    const colors = ['rgba(0,245,255,', 'rgba(123,97,255,', 'rgba(0,255,163,'];
+    this.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+  update() {
+    this.x += this.vx; this.y += this.vy;
+    if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fillStyle = this.color + this.alpha + ')';
+    ctx.fill();
+  }
+}
+const animateParticleBackground = window.matchMedia('(min-width: 701px) and (prefers-reduced-motion: no-preference)').matches;
+if (animateParticleBackground) {
+  for (let i = 0; i < 44; i++) particles.push(new Particle());
+}
+function animateParticles() {
+  if (!animateParticleBackground || document.hidden) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => { p.update(); p.draw(); });
+  // Draw connections
+  for (let i = 0; i < particles.length; i++) {
+    for (let j = i + 1; j < particles.length; j++) {
+      const dx = particles[i].x - particles[j].x;
+      const dy = particles[i].y - particles[j].y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 100) {
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(0,245,255,${0.06 * (1 - dist/100)})`;
+        ctx.lineWidth = 0.5;
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y);
+        ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(animateParticles);
+}
+animateParticles();
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) animateParticles();
+});
+
+// ===== TYPING EFFECT =====
+const phrases = [
+  'Freelancing Master',
+  'Web Developer',
+  'AI Expert',
+  'Graphic Designer',
+  'Digital Entrepreneur',
+  'MR PRO Partner'
+];
+let pIdx = 0, cIdx = 0, deleting = false;
+const typedEl = document.getElementById('typed');
+function type() {
+  const current = phrases[pIdx];
+  if (!deleting) {
+    typedEl.textContent = current.slice(0, ++cIdx);
+    if (cIdx === current.length) { deleting = true; setTimeout(type, 1800); return; }
+  } else {
+    typedEl.textContent = current.slice(0, --cIdx);
+    if (cIdx === 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; }
+  }
+  setTimeout(type, deleting ? 50 : 90);
+}
+type();
+
+// ===== COUNTER ANIMATION =====
+function animateCount(el, target, duration) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target; clearInterval(timer); return; }
+    el.textContent = Math.floor(start);
+  }, 16);
+}
+let countersStarted = false;
+function startCounters() {
+  if (countersStarted) return;
+  countersStarted = true;
+  document.querySelectorAll('.count').forEach(el => {
+    animateCount(el, parseInt(el.dataset.target), 1800);
+  });
+}
+
+// ===== SCROLL REVEAL =====
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      if (entry.target.closest('#home')) startCounters();
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Start counters when hero stats become visible
+const statsObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) startCounters();
+}, { threshold: 0.3 });
+const heroStats = document.querySelector('.hero-stats');
+if (heroStats) statsObserver.observe(heroStats);
+
+// ===== FAQ =====
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ===== MAGNETIC BUTTONS =====
+document.querySelectorAll('.btn-primary, .btn-glass, .btn-wa').forEach(btn => {
+  btn.addEventListener('mousemove', e => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) scale(1.03)`;
+  });
+  btn.addEventListener('mouseleave', () => {
+    btn.style.transform = '';
+  });
+});
+</script>
+</body>
+</html>

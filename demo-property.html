@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-PK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#15261f">
+  <title>Meridian Homes | Property Concept Demo</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; color: #17251e; background: #f3f5f0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .notice { padding: 7px; color: #edf4ed; background: #183328; text-align: center; font-size: 10px; letter-spacing: 1px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 5%; background: #fff; }
+    .brand { color: #183328; font-size: 17px; font-weight: 800; letter-spacing: 1px; text-decoration: none; }
+    nav { display: flex; gap: 14px; }
+    nav a { color: #52645a; font-size: 11px; text-decoration: none; }
+    main { max-width: 1000px; margin: auto; padding: 22px 24px; }
+    .hero { display: grid; grid-template-columns: 1fr .85fr; gap: 22px; align-items: center; }
+    .eyebrow { color: #71885f; font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+    h1 { margin: 9px 0; font-size: 36px; line-height: 1.05; }
+    .hero p { color: #5a6a60; font-size: 12px; line-height: 1.6; }
+    .hero img { width: 100%; height: 180px; object-fit: cover; object-position: center 25%; }
+    .search { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; margin: 16px 0 20px; padding: 10px; border: 1px solid #dce3d9; background: #fff; }
+    select, button { min-width: 0; min-height: 38px; padding: 0 10px; border: 1px solid #dce3d9; background: #fff; color: #17251e; font: inherit; font-size: 11px; }
+    button { border-color: #183328; color: #fff; background: #183328; font-weight: 700; cursor: pointer; }
+    h2 { margin: 0 0 10px; font-size: 18px; }
+    .homes { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; }
+    .home { padding: 13px; border: 1px solid #dce3d9; background: #fff; }
+    .home-visual { height: 64px; margin-bottom: 10px; background: linear-gradient(145deg,#dfe6d7,#a9b5a2); }
+    .home:nth-child(2) .home-visual { background: linear-gradient(145deg,#e7dfd0,#b9a987); }
+    .home:nth-child(3) .home-visual { background: linear-gradient(145deg,#d8e2de,#9db2a4); }
+    .home span { color: #71885f; font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .home h3 { margin: 6px 0 4px; font-size: 13px; }
+    .home p { margin: 0 0 10px; color: #657267; font-size: 10px; }
+    .home button { width: 100%; }
+    #property-status { min-height: 16px; color: #315d42; font-size: 11px; }
+    footer { margin-top: 10px; padding-top: 10px; border-top: 1px solid #dce3d9; color: #657267; font-size: 10px; }
+    @media (max-width: 520px) {
+      nav { display: none; }
+      main { padding: 16px; }
+      .hero { grid-template-columns: 1fr; gap: 8px; }
+      h1 { font-size: 30px; }
+      .hero img { height: 115px; }
+      .search { grid-template-columns: 1fr; }
+      .homes { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">CONCEPT DEMO · SAMPLE LISTINGS, NOT FOR SALE</div>
+  <header><a class="brand" href="#top">MERIDIAN / HOMES</a><nav aria-label="Property navigation"><a href="#homes">Browse homes</a><a href="#approach">Our approach</a></nav></header>
+  <main id="top">
+    <section class="hero" aria-labelledby="title"><div><span class="eyebrow">SPACE TO SETTLE IN</span><h1>Find a place for what comes next.</h1><p>A real-estate discovery concept with sample listings and instant location filters.</p></div><img src="RE.jfif" width="564" height="911" alt="Real-estate visual collage used in this sample property site" fetchpriority="high" decoding="async"></section>
+    <form class="search" id="property-search"><label class="sr-only" for="area">Area</label><select id="area"><option value="all">All areas</option><option value="lahore">Lahore</option><option value="islamabad">Islamabad</option><option value="karachi">Karachi</option></select><label class="sr-only" for="home-type">Home type</label><select id="home-type"><option value="all">All home types</option><option value="apartment">Apartment</option><option value="house">House</option></select><button type="submit">Show homes</button></form>
+    <section id="homes"><h2>Sample homes</h2><div class="homes"><article class="home" data-area="lahore" data-type="apartment"><div class="home-visual" aria-hidden="true"></div><span>Lahore · Apartment</span><h3>Garden District Flat</h3><p>2 bedrooms · sample listing</p><button type="button" class="save-home">Save sample</button></article><article class="home" data-area="islamabad" data-type="house"><div class="home-visual" aria-hidden="true"></div><span>Islamabad · House</span><h3>Margalla View Home</h3><p>4 bedrooms · sample listing</p><button type="button" class="save-home">Save sample</button></article><article class="home" data-area="karachi" data-type="apartment"><div class="home-visual" aria-hidden="true"></div><span>Karachi · Apartment</span><h3>Seaview Residence</h3><p>2 bedrooms · sample listing</p><button type="button" class="save-home">Save sample</button></article></div><p id="property-status" aria-live="polite"></p></section>
+    <footer id="approach">Original property-site concept. Listings and prices are not real; filters and saved-state feedback run locally.</footer>
+  </main>
+  <script>
+    document.getElementById('property-search').addEventListener('submit', event => {
+      event.preventDefault();
+      const area = document.getElementById('area').value;
+      const type = document.getElementById('home-type').value;
+      let visible = 0;
+      document.querySelectorAll('.home').forEach(home => {
+        const matches = (area === 'all' || area === home.dataset.area) && (type === 'all' || type === home.dataset.type);
+        home.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      document.getElementById('property-status').textContent = `${visible} sample home${visible === 1 ? '' : 's'} found.`;
+    });
+    document.querySelectorAll('.save-home').forEach(button => button.addEventListener('click', () => {
+      button.textContent = button.textContent === 'Saved' ? 'Save sample' : 'Saved';
+      document.getElementById('property-status').textContent = `${button.closest('.home').querySelector('h3').textContent} ${button.textContent.toLowerCase()}.`;
+    }));
+  </script>
+</body>
+</html>

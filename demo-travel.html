@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-PK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#082e49">
+  <title>Roam Pakistan | Travel Concept Demo</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; color: #142b3b; background: #f3f8fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .notice { padding: 7px; color: #eaf8ff; background: #092b43; text-align: center; font-size: 10px; letter-spacing: 1px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 5%; background: #fff; }
+    .brand { color: #0c5772; font-size: 17px; font-weight: 800; text-decoration: none; }
+    nav { display: flex; gap: 14px; }
+    nav a { color: #3b5362; font-size: 11px; text-decoration: none; }
+    main { max-width: 1000px; margin: auto; padding: 22px 24px; }
+    .hero { display: grid; grid-template-columns: 1fr .85fr; gap: 22px; align-items: center; }
+    .eyebrow { color: #0986a5; font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+    h1 { margin: 9px 0; font-size: 36px; line-height: 1.05; }
+    .hero p { color: #586f7d; font-size: 12px; line-height: 1.6; }
+    .hero img { width: 100%; height: 180px; object-fit: cover; object-position: center 35%; }
+    form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; margin: 17px 0; padding: 10px; background: #fff; border: 1px solid #d6e4e9; }
+    input, select, button { min-width: 0; min-height: 38px; padding: 0 10px; border: 1px solid #d6e4e9; border-radius: 0; background: #fff; color: #142b3b; font: inherit; font-size: 11px; }
+    button { border-color: #0c5772; color: #fff; background: #0c5772; font-weight: 700; cursor: pointer; }
+    h2 { margin: 20px 0 10px; font-size: 18px; }
+    .trips { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; }
+    .trip { padding: 13px; border: 1px solid #d6e4e9; background: #fff; }
+    .trip span { color: #0986a5; font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .trip h3 { margin: 7px 0 4px; font-size: 13px; }
+    .trip p { margin: 0 0 10px; color: #637783; font-size: 10px; line-height: 1.5; }
+    .trip button { width: 100%; }
+    #travel-status { min-height: 16px; color: #17634c; font-size: 11px; }
+    footer { margin-top: 12px; padding-top: 10px; border-top: 1px solid #d6e4e9; color: #647a87; font-size: 10px; }
+    @media (max-width: 520px) {
+      nav { display: none; }
+      main { padding: 16px; }
+      .hero { grid-template-columns: 1fr; gap: 8px; }
+      h1 { font-size: 30px; }
+      .hero img { height: 115px; }
+      form { grid-template-columns: 1fr; }
+      .trips { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">CONCEPT DEMO · SAMPLE TRIPS, NOT A LIVE BOOKING SERVICE</div>
+  <header><a class="brand" href="#top">ROAM / PAKISTAN</a><nav aria-label="Travel navigation"><a href="#trips">Find a trip</a><a href="#about">How it works</a></nav></header>
+  <main id="top">
+    <section class="hero" aria-labelledby="title"><div><span class="eyebrow">GO SOMEWHERE GOOD</span><h1>Take the scenic route.</h1><p>A travel landing-page concept with searchable destinations and a clear enquiry path.</p></div><img src="TOUR.jfif" width="736" height="958" alt="Travel campaign collage used in this sample travel site" fetchpriority="high" decoding="async"></section>
+    <form id="trip-search"><label class="sr-only" for="destination">Choose a destination</label><select id="destination"><option value="all">All destinations</option><option value="north">Northern areas</option><option value="city">City escapes</option><option value="coast">Coastal breaks</option></select><input id="travel-date" type="date" aria-label="Preferred travel date"><button type="submit">Find trips</button></form>
+    <section id="trips"><h2>Start with a place</h2><div class="trips"><article class="trip" data-place="north"><span>Mountains · 5 days</span><h3>Hunza slow road</h3><p>Valley views, local food, and unhurried stops along the route.</p><button type="button" class="ask-trip">Ask about this trip</button></article><article class="trip" data-place="city"><span>Culture · 2 days</span><h3>Lahore weekend</h3><p>Old-city architecture, market walks, and an evening food trail.</p><button type="button" class="ask-trip">Ask about this trip</button></article><article class="trip" data-place="coast"><span>Coast · 3 days</span><h3>Makran shoreline</h3><p>A coastal escape concept with a flexible, route-first itinerary.</p><button type="button" class="ask-trip">Ask about this trip</button></article></div><p id="travel-status" aria-live="polite"></p></section>
+    <footer id="about">Original travel-site concept. Search and trip-selection interactions run locally; no booking is submitted.</footer>
+  </main>
+  <script>
+    const destination = document.getElementById('destination');
+    const status = document.getElementById('travel-status');
+    document.getElementById('trip-search').addEventListener('submit', event => {
+      event.preventDefault();
+      let visible = 0;
+      document.querySelectorAll('.trip').forEach(trip => {
+        const matches = destination.value === 'all' || destination.value === trip.dataset.place;
+        trip.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      status.textContent = `${visible} sample trip${visible === 1 ? '' : 's'} shown${document.getElementById('travel-date').value ? ` for ${document.getElementById('travel-date').value}` : ''}.`;
+    });
+    document.querySelectorAll('.ask-trip').forEach(button => button.addEventListener('click', () => {
+      status.textContent = `${button.closest('.trip').querySelector('h3').textContent} selected. This demo does not submit a booking.`;
+    }));
+  </script>
+</body>
+</html>

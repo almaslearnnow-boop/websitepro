@@ -1,0 +1,68 @@
+<!-- File Name: favicon.svg -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="120" fill="#0b0b0b"/>
+
+  <!-- Glow -->
+  <defs>
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7b0"/>
+      <stop offset="25%" stop-color="#ffd95e"/>
+      <stop offset="50%" stop-color="#ffbf00"/>
+      <stop offset="75%" stop-color="#d89b00"/>
+      <stop offset="100%" stop-color="#fff0a0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Crown -->
+  <g filter="url(#goldGlow)">
+    
+    <!-- Crown Base -->
+    <path
+      d="M110 360 L402 360 L380 420 L132 420 Z"
+      fill="url(#goldGradient)"
+      stroke="#ffea94"
+      stroke-width="8"
+    />
+
+    <!-- Crown Peaks -->
+    <path
+      d="
+      M120 360
+      L165 170
+      L255 290
+      L345 170
+      L392 360
+      "
+      fill="none"
+      stroke="url(#goldGradient)"
+      stroke-width="24"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Crown Gems -->
+    <circle cx="165" cy="170" r="18" fill="#fff4b5"/>
+    <circle cx="255" cy="290" r="20" fill="#fff0a0"/>
+    <circle cx="345" cy="170" r="18" fill="#fff4b5"/>
+
+    <!-- Shine -->
+    <path
+      d="M180 120 L195 150 L225 165 L195 180 L180 210 L165 180 L135 165 L165 150 Z"
+      fill="#fff8d6"
+      opacity="0.95"
+    />
+
+  </g>
+
+</svg>

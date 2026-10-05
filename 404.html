@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en-PK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="This MR PRO page could not be found. Search our website services, graphic design, learning resources, and digital store.">
+  <title>Lost Signal | MR PRO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: 'Outfit', sans-serif;
+      background: #080b14;
+      color: #f5f7fb;
+      --ink: #080b14;
+      --muted: #aebbc7;
+      --cyan: #83fff1;
+      --line: rgba(213, 232, 241, .16);
+    }
+    * { box-sizing: border-box; }
+    html { min-width: 320px; min-height: 100%; background: var(--ink); }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+      background:
+        linear-gradient(rgba(8, 11, 20, .94), rgba(8, 11, 20, .98)),
+        repeating-linear-gradient(0deg, transparent 0 47px, rgba(131, 255, 241, .06) 48px),
+        repeating-linear-gradient(90deg, transparent 0 47px, rgba(131, 255, 241, .06) 48px);
+    }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 3px solid #ffd17a;
+      outline-offset: 4px;
+    }
+    .shell { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+    .topbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      aspect-ratio: 1;
+      place-items: center;
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-size: 17px;
+      font-weight: 800;
+    }
+    .brand-name { font-size: 15px; font-weight: 800; letter-spacing: 1.5px; }
+    .brand-subtitle { display: block; margin-top: 2px; color: var(--muted); font-size: 10px; font-weight: 500; letter-spacing: 1.4px; }
+    .system-state { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: 12px; }
+    .state-light { width: 8px; height: 8px; border-radius: 50%; background: #8affbe; box-shadow: 0 0 12px rgba(138, 255, 190, .65); }
+    main { padding: 76px 0 54px; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+      align-items: center;
+      gap: 76px;
+    }
+    .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--cyan); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .eyebrow::before { width: 26px; height: 1px; background: var(--cyan); content: ''; }
+    h1 { max-width: 620px; margin: 20px 0 18px; font-size: 72px; font-weight: 700; line-height: .99; }
+    h1 span { color: var(--cyan); }
+    .intro { max-width: 490px; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.7; }
+    .route-readout { display: flex; align-items: center; gap: 10px; margin-top: 28px; color: #8796a4; font-size: 12px; }
+    .route-readout code { max-width: min(390px, 70vw); overflow: hidden; color: #e1eaf0; text-overflow: ellipsis; white-space: nowrap; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .action {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      color: #f5f7fb;
+      background: rgba(255, 255, 255, .035);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color .2s ease, background-color .2s ease, transform .2s ease;
+    }
+    .action:hover { transform: translateY(-2px); border-color: var(--cyan); background: rgba(131, 255, 241, .08); }
+    .action-primary { border-color: var(--cyan); color: var(--ink); background: var(--cyan); }
+    .action-primary:hover { color: var(--ink); background: #b1fff7; }
+    .action svg { width: 17px; height: 17px; flex: 0 0 auto; }
+    .finder { max-width: 510px; margin-top: 42px; }
+    .finder label { display: block; margin-bottom: 10px; color: #f5f7fb; font-size: 13px; font-weight: 600; }
+    .search-row { display: flex; min-height: 54px; border: 1px solid rgba(131, 255, 241, .38); background: rgba(4, 8, 14, .82); }
+    .search-row:focus-within { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(131, 255, 241, .1); }
+    .search-row input { min-width: 0; flex: 1; padding: 0 16px; border: 0; color: #f5f7fb; background: transparent; font: inherit; font-size: 14px; outline: 0; }
+    .search-row input:focus-visible { outline: 0; }
+    .search-row input::placeholder { color: #81909d; }
+    .search-row button { width: 56px; border: 0; color: var(--ink); background: var(--cyan); cursor: pointer; }
+    .search-row button svg { width: 19px; height: 19px; vertical-align: middle; }
+    .results { margin: 0; padding: 0; list-style: none; }
+    .results:not(:empty) { margin-top: 8px; border: 1px solid var(--line); background: #0c121c; }
+    .results a { display: block; padding: 12px 14px; color: #dce6ed; font-size: 14px; text-decoration: none; }
+    .results li + li { border-top: 1px solid var(--line); }
+    .results a:hover { color: var(--cyan); background: rgba(131, 255, 241, .06); }
+    .search-status { min-height: 20px; margin: 8px 0 0; color: #96a5b1; font-size: 12px; }
+    .visual { position: relative; align-self: center; margin: 0; }
+    .visual::before { position: absolute; inset: -14px 14px 14px -14px; z-index: -1; border: 1px solid rgba(131, 255, 241, .35); content: ''; }
+    .visual img { display: block; width: 100%; height: auto; aspect-ratio: 1.9; object-fit: contain; border: 1px solid var(--line); }
+    .visual figcaption { display: flex; justify-content: space-between; gap: 16px; padding-top: 13px; color: #9cacb9; font-size: 11px; letter-spacing: .5px; }
+    .visual figcaption span:last-child { color: var(--cyan); text-align: right; }
+    .discover { margin-top: 70px; padding-top: 23px; border-top: 1px solid var(--line); }
+    .discover-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+    .discover h2 { margin: 0; font-size: 16px; font-weight: 600; }
+    .discover-head p { margin: 0; color: #8f9daa; font-size: 12px; }
+    .destination-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line); }
+    .destination { min-height: 92px; display: flex; flex-direction: column; justify-content: space-between; padding: 16px; text-decoration: none; transition: background-color .2s ease; }
+    .destination + .destination { border-left: 1px solid var(--line); }
+    .destination:hover { background: rgba(131, 255, 241, .06); }
+    .destination small { color: #8f9daa; font-size: 11px; }
+    .destination strong { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 14px; }
+    .destination strong span { color: var(--cyan); font-size: 18px; }
+    footer { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); color: #82919e; font-size: 12px; }
+    footer a { color: #dce6ed; text-underline-offset: 3px; }
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; gap: 48px; }
+      .hero-copy { max-width: 680px; }
+      .visual { width: min(100%, 600px); align-self: start; }
+      main { padding-top: 52px; }
+      .destination-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .destination:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+      .destination:nth-child(4) { border-top: 1px solid var(--line); }
+    }
+    @media (max-width: 560px) {
+      .shell { width: calc(100% - 36px); }
+      .topbar { min-height: 70px; }
+      .system-state { font-size: 11px; }
+      main { padding-top: 42px; }
+      .hero { gap: 38px; }
+      h1 { margin-top: 17px; font-size: 48px; }
+      .intro { font-size: 16px; }
+      .actions { display: grid; grid-template-columns: 1fr; }
+      .action { width: 100%; }
+      .finder { margin-top: 34px; }
+      .visual::before { inset: -8px 8px 8px -8px; }
+      .discover { margin-top: 50px; }
+      .discover-head { display: block; }
+      .discover-head p { margin-top: 6px; }
+      .destination { min-height: 86px; padding: 13px; }
+      .destination strong { font-size: 13px; }
+      footer { align-items: flex-start; flex-direction: column; justify-content: center; padding: 16px 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="MR PRO home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-name">MR PRO<span class="brand-subtitle">DIGITAL STUDIO · PAKISTAN</span></span>
+      </a>
+      <span class="system-state"><span class="state-light" aria-hidden="true"></span> Main site online</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Destination not found · Error 404</p>
+          <h1 id="page-title">Lost signal.<br><span>Strong connection.</span></h1>
+          <p class="intro">This address led nowhere, but your next idea still has a home. Find a destination below and get back to what you came for.</p>
+          <p class="route-readout"><span aria-hidden="true">↳</span> REQUESTED ROUTE <code id="requested-route">/</code></p>
+
+          <div class="actions">
+            <a class="action action-primary" href="/">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              Go to homepage
+            </a>
+            <button class="action" id="back-button" type="button">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 14 4 9l5-5M4 9h10a6 6 0 0 1 0 12h-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Go back
+            </button>
+          </div>
+
+          <form class="finder" id="site-search" role="search">
+            <label for="destination-search">Search MR PRO destinations</label>
+            <div class="search-row">
+              <input id="destination-search" type="search" placeholder="Try “website”, “design”, or “store”" autocomplete="off" aria-controls="search-results" aria-describedby="search-status">
+              <button type="submit" aria-label="Search destinations">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+            <ul class="results" id="search-results" aria-label="Matching destinations"></ul>
+            <p class="search-status" id="search-status" aria-live="polite">Search pages, services, learning, and products.</p>
+          </form>
+        </div>
+
+        <figure class="visual">
+          <img src="/social-preview.svg" width="1200" height="630" alt="MR PRO digital services in Pakistan: web, design, tools, and learning" fetchpriority="high">
+          <figcaption><span>MR PRO · OFFICIAL DESTINATION</span><span id="pakistan-time">PAKISTAN TIME</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="discover" aria-labelledby="discover-title">
+        <div class="discover-head">
+          <h2 id="discover-title">Pick up the trail</h2>
+          <p>Four quick routes back into MR PRO.</p>
+        </div>
+        <nav class="destination-list" aria-label="Explore MR PRO">
+          <a class="destination" href="/website.html"><small>01 / BUILD</small><strong>Website services <span aria-hidden="true">↗</span></strong></a>
+          <a class="destination" href="/graphic.html"><small>02 / DESIGN</small><strong>Graphic design <span aria-hidden="true">↗</span></strong></a>
+          <a class="destination" href="/earn.html"><small>03 / LEARN</small><strong>Learn &amp; earn <span aria-hidden="true">↗</span></strong></a>
+          <a class="destination" href="/store.html"><small>04 / EXPLORE</small><strong>Digital store <span aria-hidden="true">↗</span></strong></a>
+        </nav>
+      </section>
+    </main>
+
+    <footer>
+      <span>Still stuck? <a id="report-link" href="https://wa.me/923114917370">Tell MR PRO which link brought you here.</a></span>
+      <span id="local-clock">PAKISTAN STANDARD TIME · UTC+05:00</span>
+    </footer>
+  </div>
+
+  <script>
+    const destinations = [
+      { title: 'Home', href: '/', terms: 'home main mr pro' },
+      { title: 'Website development', href: '/website.html', terms: 'website web development shop ecommerce business' },
+      { title: 'Graphic design', href: '/graphic.html', terms: 'graphic design branding logo creative' },
+      { title: 'Learn & Earn', href: '/earn.html', terms: 'learn earn learning freelancing skills' },
+      { title: 'Digital store', href: '/store.html', terms: 'store digital products tools canva' }
+    ];
+    const searchForm = document.getElementById('site-search');
+    const searchInput = document.getElementById('destination-search');
+    const results = document.getElementById('search-results');
+    const searchStatus = document.getElementById('search-status');
+
+    function matchingDestinations(query) {
+      const normalizedQuery = query.trim().toLocaleLowerCase();
+      if (!normalizedQuery) return [];
+      return destinations.filter(destination =>
+        `${destination.title} ${destination.terms}`.toLocaleLowerCase().includes(normalizedQuery)
+      );
+    }
+
+    function renderResults(matches) {
+      results.replaceChildren();
+      matches.forEach(destination => {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = destination.href;
+        link.textContent = destination.title;
+        item.append(link);
+        results.append(item);
+      });
+    }
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.trim();
+      const matches = matchingDestinations(query);
+      renderResults(matches);
+      searchStatus.textContent = !query
+        ? 'Search pages, services, learning, and products.'
+        : matches.length
+          ? `${matches.length} destination${matches.length === 1 ? '' : 's'} found.`
+          : 'No match yet. Try “web”, “design”, “learn”, or “store”.';
+    });
+
+    searchForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const match = matchingDestinations(searchInput.value)[0];
+      if (match) window.location.assign(match.href);
+      else searchStatus.textContent = 'Try a service name such as website, design, learning, or store.';
+    });
+
+    document.getElementById('back-button').addEventListener('click', () => {
+      if (window.history.length > 1) window.history.back();
+      else window.location.assign('/');
+    });
+
+    try {
+      const requestedPath = decodeURIComponent(window.location.pathname);
+      document.getElementById('requested-route').textContent = requestedPath || '/';
+      const reportMessage = `Hello MR PRO, I reached the 404 page at ${window.location.origin}${requestedPath}.`;
+      document.getElementById('report-link').href = `https://wa.me/923114917370?text=${encodeURIComponent(reportMessage)}`;
+    } catch {
+      document.getElementById('requested-route').textContent = window.location.pathname;
+    }
+
+    const pakistanClock = new Intl.DateTimeFormat('en-PK', {
+      timeZone: 'Asia/Karachi',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
+    const timeLabel = document.getElementById('pakistan-time');
+    const localClock = document.getElementById('local-clock');
+    function updatePakistanTime() {
+      const time = pakistanClock.format(new Date());
+      timeLabel.textContent = `PAKISTAN · ${time}`;
+      localClock.textContent = `PAKISTAN STANDARD TIME · ${time} · UTC+05:00`;
+    }
+    updatePakistanTime();
+    window.setInterval(updatePakistanTime, 60000);
+  </script>
+</body>
+</html>

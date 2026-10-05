@@ -1,0 +1,51 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes shine {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      .crown-shine {
+        animation: shine 2s ease-in-out infinite;
+      }
+    </style>
+    <radialGradient id="goldGradient" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shine-effect">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background glow -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.3" filter="url(#glow)"/>
+  
+  <!-- Crown base -->
+  <path d="M 50 130 L 60 80 L 80 100 L 100 60 L 120 100 L 140 80 L 150 130 Z" 
+        fill="url(#goldGradient)" filter="url(#glow)" stroke="#FF8C00" stroke-width="2"/>
+  
+  <!-- Crown band -->
+  <ellipse cx="100" cy="130" rx="55" ry="15" fill="url(#goldGradient)" stroke="#FF8C00" stroke-width="1.5"/>
+  
+  <!-- Shining highlights on peaks -->
+  <circle cx="60" cy="80" r="6" fill="#FFFF00" class="crown-shine" filter="url(#shine-effect)"/>
+  <circle cx="100" cy="60" r="8" fill="#FFFF99" class="crown-shine" filter="url(#shine-effect)" style="animation-delay: 0.3s"/>
+  <circle cx="140" cy="80" r="6" fill="#FFFF00" class="crown-shine" filter="url(#shine-effect)" style="animation-delay: 0.6s"/>
+  
+  <!-- Additional subtle shine rays -->
+  <line x1="100" y1="50" x2="100" y2="30" stroke="#FFD700" stroke-width="2" opacity="0.6" class="crown-shine"/>
+  <line x1="85" y1="65" x2="70" y2="40" stroke="#FFD700" stroke-width="1.5" opacity="0.5" class="crown-shine" style="animation-delay: 0.3s"/>
+  <line x1="115" y1="65" x2="130" y2="40" stroke="#FFD700" stroke-width="1.5" opacity="0.5" class="crown-shine" style="animation-delay: 0.6s"/>
+  
+  <!-- Center jewel -->
+  <circle cx="100" cy="75" r="4" fill="#00FFFF" opacity="0.8" filter="url(#glow)"/>
+</svg>
